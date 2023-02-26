@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" 
+    href="styles.css">
+</head>
+<body>
+  <header>
+      <h1 id="title">freeCodeCamp Survey Form</h1>
+      <p id="description">Thank you for taking the time to help us improve the platform</p>
+  </header>
+  <form action="#" method="post" id="survey-form">
+    <fieldset>
+      <label for="name" id="name-label">Name 
+        <input type="text" name="name" id="name" placeholder="Enter your name" required> 
+      </label>
+
+      <label for="email" id="email-label">Email 
+        <input type="email" id="email" pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z] {2,}$" placeholder="Enter your Email" required >
+      </label>
+
+        <label for="number" id="number-label">Age(optional)
+          <input type="number" id="number" min="10" max="99" step="1" pattern="[0-9]{2}" placeholder="Age">
+        </label>
+        
+        <label for="current-role"><p class="text">Which option best describes your current role?</p>
+            <select id="current-role" name="current-role">
+                <option disabled>Select current role</optgroup>
+                <option value="student">student</option>
+                <option value="full-time-job">full time job</option>
+                <option value="full-time-listener">full time listener</option>
+                <option value="not-saying">prefer not to say</option>
+                <option value="other">other</option>
+              </select>
+         </label> 
+        </fieldset>
+
+        <fieldset>
+              <label for="recommendation">Would you recommend freeCodeCamp to a friend?
+                <label for="definitely">
+                <input type="radio" id="definitely" name="recommendation" value="definitely" class="inline" checked>
+                Definitely</label>
+                <label for="maybe">
+                <input type="radio" id="maybe" name="recommendation"  value="maybe" class="inline">
+                Maybe</label>
+              </label>
+              <label for="not-sure">
+                <input type="radio" id="not-sure" name="recommendation"  class="inline" value="not-sure">
+                Not Sure</label>
+              </label>
+          </fieldset>
+
+          <fieldset> 
+            <label for="dropdown"><p class="text">What is your favorite feature of freeCodeCamp?</p>
+              <select id="dropdown">
+                  <option value="" disabled>Select an option</option>
+                  <option value="Challenges">Challenges</option>
+                  <option value="Projects">Projects</option>
+                  <option value="Community">Community</option>
+                  <option value="Open Source">Open Source</option>
+              </select>  
+              </label>
+              </fieldset>
+              <fieldset>  
+              <label>What would you like to see improved? (Check all that apply)
+  <label for="fep"><input type="checkbox" id="fep" value="front-end-projects"  class="inline">Front-end Projects</label>
+  <label for="bep"><input type="checkbox" id="bep" value="back-end-projects" class="inline">Back-end Projects</label>
+  <label for="dv"><input type="checkbox" id="dv" value="data visualization" class="inline">Data visualization</label>
+  <label for="challenges"><input type="checkbox" id="challenges" value="challenges" class="inline">Challenges</label>
+  <label for="osc"><input type="checkbox" id="osc" value="open-source-community" class="inline">Open Source Community</label>
+  <label for="gitter-help-rooms"><input type="checkbox" id="gitter-help-rooms" value="gitter-help-rooms" class="inline">Gitter help rooms</label>
+  <label for="videos"><input type="checkbox" id="videos" value="videos" class="inline">Videos</label>
+              </label>
+          </fieldset>  
+            <fieldset><p class="text">Any comments or suggestions?</p>
+              <textarea rows="7">
+                </textarea>
+            </fieldset>   
+
+            <fieldset>
+               
+              <input type="submit" name="submit" id="submit" title="submit">
+              
+            </fieldset>                   
+    </form>
+</body> 
